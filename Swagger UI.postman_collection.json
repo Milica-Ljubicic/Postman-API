@@ -1,0 +1,731 @@
+{
+	"info": {
+		"_postman_id": "c93f011b-3faa-4cbe-b670-4ef0c2c24296",
+		"name": "Swagger UI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26460727",
+		"_collection_link": "https://dark-robot-498597.postman.co/workspace/Team-Workspace~1a88cc6b-93ad-4c26-8628-d6ea8d5a709a/collection/26460727-c93f011b-3faa-4cbe-b670-4ef0c2c24296?action=share&creator=26460727&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Activities1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Activities",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"title\": \"string\",\n  \"dueDate\": \"2023-04-02T12:33:51.452Z\",\n  \"completed\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Activities",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Activities/3",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Activities",
+						"3"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"title\": \"string\",\n  \"dueDate\": \"2023-04-03T13:04:45.145Z\",\n  \"completed\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Activities/2",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Activities",
+						"2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activities5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Activities/3",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Activities",
+						"3"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Authors",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"idBook\": 0,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Authors",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"idBook\": 0,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Authors/authors/books/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors",
+						"authors",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"idBook\": 0,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Authors/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"idBook\": 1,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Authors/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"idBook\": 1,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Authors/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"idBook\": 1,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Books",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"title\": \"string\",\n  \"description\": \"string\",\n  \"pageCount\": 0,\n  \"excerpt\": \"string\",\n  \"publishDate\": \"2023-04-20T17:05:59.432Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Books",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"idBook\": 1,\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Books/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"title\": \"string\",\n  \"description\": \"string\",\n  \"pageCount\": 0,\n  \"excerpt\": \"string\",\n  \"publishDate\": \"2023-04-20T17:05:59.432Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Books/2",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Books/2",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoverPhotos1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/CoverPhotos",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"CoverPhotos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoverPhotos2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"idBook\": 0,\n  \"url\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/CoverPhotos",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"CoverPhotos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoverPhotos3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/CoverPhotos/books/covers/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"CoverPhotos",
+						"books",
+						"covers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoverPhotos4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/CoverPhotos/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"CoverPhotos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoverPhotos5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"idBook\": 0,\n  \"url\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/CoverPhotos/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"CoverPhotos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoverPhotos6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/CoverPhotos/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"CoverPhotos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Users",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"userName\": \"string\",\n  \"password\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Users",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Users/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"userName\": \"string\",\n  \"password\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Users/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/api/v1/Users/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseURL",
+			"value": "https://fakerestapi.azurewebsites.net"
+		}
+	]
+}
